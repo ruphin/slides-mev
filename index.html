@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+/>
+
+<style>
+  :root {
+    --pink: #e9437a;
+    --blue: #2e9be6;
+    --dark: #272822;
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto"), local("Roboto-Regular"),
+      url(https://fonts.gstatic.com/s/roboto/v16/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2)
+        format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+      U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Roboto Medium"), local("Roboto-Medium"),
+      url(https://fonts.gstatic.com/s/roboto/v16/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2)
+        format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+      U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Roboto Bold"), local("Roboto-Bold"),
+      url(https://fonts.gstatic.com/s/roboto/v16/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2)
+        format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+      U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    src: local("Roboto Black"), local("Roboto-Black"),
+      url(https://fonts.gstatic.com/s/roboto/v16/mnpfi9pxYH-Go5UiibESIpBw1xU1rKptJj_0jans920.woff2)
+        format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+      U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+
+  slidem-deck[loading] {
+    display: none;
+  }
+
+  .centerCallout {
+    display: inline-block;
+    padding: 40px;
+    background: var(--pink);
+    font-weight: 700;
+    font-size: 120px;
+    letter-spacing: 2px;
+  }
+
+  .centerCallout.blue {
+    background: var(--blue);
+  }
+
+  .centerCallout.dark {
+    background: var(--dark);
+  }
+
+  [centerbg] {
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-color: var(--dark);
+  }
+
+  slidem-deck {
+    color: white;
+  }
+
+  slidem-polymersummit-slide {
+    scale: 1.2;
+  }
+
+  slidem-slide h2 {
+    margin-bottom: 80px !important;
+  }
+
+  slidem-slide p[width="1200px"] {
+    width: 1200px;
+  }
+
+  slidem-slide[links] h2 {
+    margin-bottom: 20px !important;
+  }
+
+  slidem-slide[links] p {
+    margin-bottom: 180px !important;
+  }
+
+  span[right] {
+    float: right;
+  }
+
+  div[platform] p {
+    font-size: 108px;
+    font-weight: 900;
+    border-bottom: 8px solid white;
+    margin-bottom: 28px;
+  }
+
+  div[platform] {
+    display: inline-block;
+    padding: 50px;
+    background: var(--blue);
+  }
+</style>
+
+<script type="module" src="index.js"></script>
+
+<slidem-deck font="Roboto" loading>
+  <slidem-polymersummit-slide slide-out>
+    <h2 slot="title">Open Source</h2>
+    <p slot="subtitle">Code Collaboration</p>
+    <img slot="logo" src="/images/feguild.png" />
+    <img slot="avatar" src="/images/avatar.jpg" />
+    <p slot="event">Frontend Guild Workshop March 2021</p>
+    <p slot="speaker">Goffert van Gool</p>
+    <a slot="email" href="mailto:ruphin@ruphin.net">ruphin@ruphin.net</a>
+    <a slot="twitter" href="https://twitter.com/ruphin_">@ruphin_</a>
+  </slidem-polymersummit-slide>
+
+  <slidem-slide center background="/images/tree.jpg">
+    <div center>
+      <p center class="centerCallout blue">Git</p>
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center slide-in background="--dark">
+    <div center>
+      <img src="/images/root.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center background="--dark">
+    <div center>
+      <img src="/images/changes1.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center background="--dark">
+    <div center>
+      <img src="/images/changes2.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center background="--dark">
+    <div center>
+      <img src="/images/git-tree.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center background="--dark">
+    <div center>
+      <img src="/images/head.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center background="--dark">
+    <div center>
+      <img src="/images/rollback.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center slide-out background="--dark">
+    <div center>
+      <img src="/images/feature-branch.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center background="/images/sharing.jpg">
+    <div center>
+      <p center class="centerCallout blue">Collaboration</p>
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center slide-in slide-out background="--dark">
+    <div center>
+      <img src="/images/collaboration.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center background="/images/fence.jpg">
+    <div center>
+      <p center class="centerCallout blue">Access Control</p>
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center slide-in slide-out background="--dark">
+    <div center>
+      <img src="/images/access-rights.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center slide-in slide-out background="--dark">
+    <div center>
+      <img src="/images/gitlab.jpg" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center background="/images/patchroom.jpg">
+    <div center>
+      <p center class="centerCallout blue">Pull Requests</p>
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center slide-in background="--dark">
+    <div center>
+      <img src="/images/pull-request.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center slide-out background="--dark">
+    <div center>
+      <img src="/images/pull-approve.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center background="/images/fork.jpg">
+    <div center>
+      <p center class="centerCallout blue">Forks</p>
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center slide-in background="--dark">
+    <div center>
+      <img src="/images/repo.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center background="--dark">
+    <div center>
+      <img src="/images/repo-fork.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center background="--dark">
+    <div center>
+      <img src="/images/repo-dev.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center background="--dark">
+    <div center>
+      <img src="/images/fork-pr.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center background="--dark">
+    <div center>
+      <img src="/images/fork-accept.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center slide-out background="--dark">
+    <div center>
+      <img src="/images/repo-pr.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center background="/images/legal.jpg">
+    <div center>
+      <p center class="centerCallout blue">Licenses</p>
+    </div>
+  </slidem-slide>
+
+  <slidem-slide slide-in slide-out background="--blue">
+    <h2 font-size="128px" line-height="1.1">Common Licenses</h2>
+    <div reveal>
+      <p font-size="72px" bold line-height="1.3">- MIT</p>
+      <p font-size="72px" italic line-height="1.3">
+        Do whatever you want with my stuff, just don't sue me
+      </p>
+    </div>
+    <div reveal style="margin-top: 5%">
+      <p font-size="72px" bold line-height="1.3">- GPL</p>
+      <p font-size="72px" italic line-height="1.3">
+        If you change or distribute my code, you must provide the source under
+        this license
+      </p>
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center background="/images/issues.jpg">
+    <div center>
+      <p center class="centerCallout blue">Issues</p>
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center slide-in slide-out background="--dark">
+    <div center>
+      <img src="/images/issue-tracker.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center background="/images/workflow.jpg">
+    <div center>
+      <p center class="centerCallout blue">Workflow</p>
+    </div>
+  </slidem-slide>
+
+  <slidem-slide slide-in slide-out background="--dark">
+    <h2 font-size="128px" line-height="1.1">Contribution Steps</h2>
+    <p font-size="98px" line-height="1.3" reveal>- Check CONTRIBUTING.md</p>
+    <p font-size="98px" line-height="1.3" reveal>- Check issues</p>
+    <p font-size="98px" line-height="1.3" reveal>
+      - Communicate with the maintainer
+    </p>
+    <p font-size="98px" line-height="1.3" reveal>- Fork the repository</p>
+    <p font-size="98px" line-height="1.3" reveal>- Make a merge request</p>
+  </slidem-slide>
+
+  <slidem-slide center background="/images/luck.jpg">
+    <div center>
+      <p center class="centerCallout blue">Good Luck</p>
+    </div>
+  </slidem-slide>
+</slidem-deck>
