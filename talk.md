@@ -11,8 +11,10 @@ Economic Efficiency
   - Products _priced optimally_
 
 Large systems never optimally efficient
-  - _Good_ - allows new business
   - Main cause is _hidden information_
+
+Inefficiency fosters entrepreneurship
+  - _Good_ - allows new business
 
 Ethereum Economy
   - _Ethereum is a large economic system_
@@ -52,37 +54,35 @@ HFT
   - Not a new concept
   - HFT exploits the same things in traditional markets
 
-
 DollarAuction
-  - Not exactly taking free money
   - Not speed, but fee decides who wins
   - Creates an "open auction"
 
 BotAuction
   - Different bots trying to outbid
 
-Strategy
-  - Arbitrage
+Miners
+  - Miners take all profits
+  - MEV
 
+MEV market
 
+Negative Externalities
+  - Lost funds are lost forever
+  - Frontrunning (eggs)
 
+Flashboys
+  - Initiative to solve
+  - Direct connection to miners
+  - "secret" transactions
 
-========================
+  - Tools for frontrunners
+  - Tools for miners
+  - Tools for users
 
-Examples of economic inefficiency
-  - Exchange arbitrage
+MEV Alpha Leak
+  - half a million in one month
+  - From nothing
 
-
-
-0x8E2B03737Fdfd6DE44C4BF99b78c39dE308371aA
-
-https://etherscan.io/tx/0x0274fc21176d3ff0c49d356857893d61cd1698c0baeb834ca7e93700de2a4d45
-
-
-
-
-
-
-
-
+QA
 

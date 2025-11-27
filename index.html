@@ -9,7 +9,7 @@
   :root {
     --pink: #e9437a;
     --blue: #2e9be6;
-    --dark: #272822;
+    --dark: #293338;
   }
 
   @font-face {
@@ -63,9 +63,9 @@
   .centerCallout {
     display: inline-block;
     padding: 40px;
-    background: var(--pink);
+    background: var(--dark);
     font-weight: 700;
-    font-size: 120px;
+    font-size: 52px;
     letter-spacing: 2px;
   }
 
@@ -83,12 +83,12 @@
     background-color: var(--dark);
   }
 
-  slidem-deck {
-    color: white;
+  div[margin-bottom] {
+    margin-bottom: 20px;
   }
 
-  slidem-polymersummit-slide {
-    scale: 1.2;
+  slidem-deck {
+    color: white;
   }
 
   slidem-slide h2 {
@@ -123,215 +123,230 @@
     padding: 50px;
     background: var(--blue);
   }
+  #faceCamContainer {
+    position: absolute;
+    bottom: 10vh;
+    right: 4vw;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    z-index: 99;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #faceCam {
+    height: 30vh;
+  }
+  .mev {
+    transform: scale(1.5);
+  }
+  .fb {
+    transform: scale(0.8);
+  }
+
+  .derp {
+    display:flex;
+    align-items: center;
+  }
 </style>
 
 <script type="module" src="index.js"></script>
+<div id="faceCamContainer">
+  <video id="faceCam" muted autoplay></video>
+</div>
 
 <slidem-deck font="Roboto" loading>
   <slidem-polymersummit-slide slide-out>
-    <h2 slot="title">Open Source</h2>
-    <p slot="subtitle">Code Collaboration</p>
-    <img slot="logo" src="/images/feguild.png" />
-    <img slot="avatar" src="/images/avatar.jpg" />
-    <p slot="event">Frontend Guild Workshop March 2021</p>
+    <h2 slot="title">MEV</h2>
+    <p slot="subtitle">Into the Dark Forest</p>
+    <p slot="event">Flock Community Talks Fall 2021</p>
     <p slot="speaker">Goffert van Gool</p>
     <a slot="email" href="mailto:ruphin@ruphin.net">ruphin@ruphin.net</a>
     <a slot="twitter" href="https://twitter.com/ruphin_">@ruphin_</a>
   </slidem-polymersummit-slide>
 
-  <slidem-slide center background="/images/tree.jpg">
-    <div center>
-      <p center class="centerCallout blue">Git</p>
+  <slidem-slide center background="/images/EconomicEfficiency.jpg">
+    <div>
+      <div center margin-bottom>
+        <p reveal font-size="52px" class="centerCallout dark">
+          Economic Efficiency
+        </p>
+      </div>
+      <div center>
+        <p reveal font-size="52px" class="centerCallout dark">
+          Correct Pricing
+        </p>
+      </div>
     </div>
   </slidem-slide>
 
-  <slidem-slide center slide-in background="--dark">
-    <div center>
-      <img src="/images/root.png" />
+  <slidem-slide center slide-in slide-out background="--dark">
+    <div>
+      <div center margin-bottom><p>In large economic systems</p></div>
+      <div center><p>inefficiency is unavoidable</p></div>
     </div>
   </slidem-slide>
 
-  <slidem-slide center background="--dark">
+  <slidem-slide center background="/images/Bakery.jpg">
     <div center>
-      <img src="/images/changes1.png" />
+      <p reveal font-size="52px" class="centerCallout dark">
+        Inefficiency fosters entrepreneurship
+      </p>
     </div>
   </slidem-slide>
 
-  <slidem-slide center background="--dark">
+  <slidem-slide center slide-in background="white">
     <div center>
-      <img src="/images/changes2.png" />
-    </div>
-  </slidem-slide>
-
-  <slidem-slide center background="--dark">
-    <div center>
-      <img src="/images/git-tree.png" />
-    </div>
-  </slidem-slide>
-
-  <slidem-slide center background="--dark">
-    <div center>
-      <img src="/images/head.png" />
-    </div>
-  </slidem-slide>
-
-  <slidem-slide center background="--dark">
-    <div center>
-      <img src="/images/rollback.png" />
-    </div>
-  </slidem-slide>
-
-  <slidem-slide center slide-out background="--dark">
-    <div center>
-      <img src="/images/feature-branch.png" />
-    </div>
-  </slidem-slide>
-
-  <slidem-slide center background="/images/sharing.jpg">
-    <div center>
-      <p center class="centerCallout blue">Collaboration</p>
+      <img src="/images/EthereumEconomy.jpg" />
     </div>
   </slidem-slide>
 
   <slidem-slide center slide-in slide-out background="--dark">
     <div center>
-      <img src="/images/collaboration.png" />
+      <p font-size="52px" class="centerCallout dark">
+        What happens when we create economic inefficiency?
+      </p>
     </div>
   </slidem-slide>
 
-  <slidem-slide center background="/images/fence.jpg">
+  <slidem-slide center background="/images/Mempool.gif">
     <div center>
-      <p center class="centerCallout blue">Access Control</p>
+      <p font-size="52px" class="centerCallout dark">Mempool Intermezzo</p>
     </div>
   </slidem-slide>
 
   <slidem-slide center slide-in slide-out background="--dark">
-    <div center>
-      <img src="/images/access-rights.png" />
-    </div>
-  </slidem-slide>
-
-  <slidem-slide center slide-in slide-out background="--dark">
-    <div center>
-      <img src="/images/gitlab.jpg" />
-    </div>
-  </slidem-slide>
-
-  <slidem-slide center background="/images/patchroom.jpg">
-    <div center>
-      <p center class="centerCallout blue">Pull Requests</p>
-    </div>
-  </slidem-slide>
-
-  <slidem-slide center slide-in background="--dark">
-    <div center>
-      <img src="/images/pull-request.png" />
-    </div>
-  </slidem-slide>
-
-  <slidem-slide center slide-out background="--dark">
-    <div center>
-      <img src="/images/pull-approve.png" />
-    </div>
-  </slidem-slide>
-
-  <slidem-slide center background="/images/fork.jpg">
-    <div center>
-      <p center class="centerCallout blue">Forks</p>
-    </div>
-  </slidem-slide>
-
-  <slidem-slide center slide-in background="--dark">
-    <div center>
-      <img src="/images/repo.png" />
-    </div>
-  </slidem-slide>
-
-  <slidem-slide center background="--dark">
-    <div center>
-      <img src="/images/repo-fork.png" />
-    </div>
-  </slidem-slide>
-
-  <slidem-slide center background="--dark">
-    <div center>
-      <img src="/images/repo-dev.png" />
-    </div>
-  </slidem-slide>
-
-  <slidem-slide center background="--dark">
-    <div center>
-      <img src="/images/fork-pr.png" />
-    </div>
-  </slidem-slide>
-
-  <slidem-slide center background="--dark">
-    <div center>
-      <img src="/images/fork-accept.png" />
-    </div>
-  </slidem-slide>
-
-  <slidem-slide center slide-out background="--dark">
-    <div center>
-      <img src="/images/repo-pr.png" />
-    </div>
-  </slidem-slide>
-
-  <slidem-slide center background="/images/legal.jpg">
-    <div center>
-      <p center class="centerCallout blue">Licenses</p>
-    </div>
-  </slidem-slide>
-
-  <slidem-slide slide-in slide-out background="--blue">
-    <h2 font-size="128px" line-height="1.1">Common Licenses</h2>
+    <h2 font-size="92px" line-height="1.1">The mempool</h2>
     <div reveal>
-      <p font-size="72px" bold line-height="1.3">- MIT</p>
-      <p font-size="72px" italic line-height="1.3">
-        Do whatever you want with my stuff, just don't sue me
+      <p font-size="58px" bold line-height="1.3">- Holds pending transactions</p>
+      <p font-size="58px" italic line-height="1.3">
+        Transactions do not happen until they are included in a block
       </p>
     </div>
     <div reveal style="margin-top: 5%">
-      <p font-size="72px" bold line-height="1.3">- GPL</p>
-      <p font-size="72px" italic line-height="1.3">
-        If you change or distribute my code, you must provide the source under
-        this license
+      <p font-size="58px" bold line-height="1.3">- Is publicly visible</p>
+      <p font-size="58px" italic line-height="1.3">
+        Everyone can see all pending transactions 
       </p>
     </div>
   </slidem-slide>
 
-  <slidem-slide center background="/images/issues.jpg">
+  <slidem-slide center background="/images/Miners.jpg">
+  </slidem-slide>
+
+
+  <slidem-slide center slide-in slide-out background="--dark">
     <div center>
-      <p center class="centerCallout blue">Issues</p>
+      <p font-size="52px" class="centerCallout dark">
+        What happens when we create economic inefficiency?
+      </p>
+    </div>
+
+    <div center>
+      <p reveal font-size="82px" class="centerCallout dark">Nothing!<p reveal>(yet)</p></p>
     </div>
   </slidem-slide>
 
   <slidem-slide center slide-in slide-out background="--dark">
     <div center>
-      <img src="/images/issue-tracker.png" />
+      <p font-size="52px" class="centerCallout dark">
+        What happens when we try to take advantage?
+      </p>
     </div>
   </slidem-slide>
 
-  <slidem-slide center background="/images/workflow.jpg">
+  <slidem-slide center slide-in slide-out background="--dark">
     <div center>
-      <p center class="centerCallout blue">Workflow</p>
+      <img height="800vh" src="/images/DarkForest.jpg" />
     </div>
   </slidem-slide>
 
-  <slidem-slide slide-in slide-out background="--dark">
-    <h2 font-size="128px" line-height="1.1">Contribution Steps</h2>
-    <p font-size="98px" line-height="1.3" reveal>- Check CONTRIBUTING.md</p>
-    <p font-size="98px" line-height="1.3" reveal>- Check issues</p>
-    <p font-size="98px" line-height="1.3" reveal>
-      - Communicate with the maintainer
-    </p>
-    <p font-size="98px" line-height="1.3" reveal>- Fork the repository</p>
-    <p font-size="98px" line-height="1.3" reveal>- Make a merge request</p>
+  <slidem-slide center background="/images/Robots.jpg">
   </slidem-slide>
 
-  <slidem-slide center background="/images/luck.jpg">
+  <slidem-slide center slide-in background="/images/HFT.jpg">
+  </slidem-slide>
+
+  <slidem-slide center slide-in background="/images/DollarAuction.jpg">
+  </slidem-slide>
+
+  <slidem-slide center slide-in slide-out background="white">
     <div center>
-      <p center class="centerCallout blue">Good Luck</p>
+      <img src="/images/BotAuction.png" />
     </div>
   </slidem-slide>
-</slidem-deck>
+
+  
+  <slidem-slide center background="/images/Miners.jpg">
+      <div center margin-bottom>
+        <p reveal font-size="52px" class="centerCallout dark">
+          Miner Extractable Value
+        </p>
+      </div>
+      <div center>
+        <p reveal font-size="52px" class="centerCallout dark">
+          Maximally Extractable Value
+        </p>
+      </div>
+  </slidem-slide>
+
+  <slidem-slide center slide-in background="white">
+    <div center>
+      <img class="mev" src="/images/ExtractedValue.png" />
+    </div>
+  </slidem-slide>
+
+
+  <slidem-slide center slide-in slide-out background="--dark">
+    <div center>
+      <p font-size="52px" class="centerCallout dark">
+        Negative Externalities
+      </p>
+    </div>
+  </slidem-slide>
+
+
+  <slidem-slide center background="/images/Mistake.jpg">
+  </slidem-slide>
+
+  <slidem-slide center slide-in background="/images/Trade.jpg">
+  </slidem-slide>
+
+
+  <slidem-slide center slide-in background="white">
+    <div center>
+      <img class="mev" src="/images/Flashbots.png" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center slide-in slide-out background="--dark">
+    <h2 class="derp" font-size="92px" line-height="1.1">
+      <img class="fb" src="/images/FlashbotsLogo.jpeg" />Flashbots</h2>
+    <div >
+      <p font-size="58px" bold line-height="1.3">- docs.flashbots.net</p>
+    </div>
+    <div style="margin-top: 5%">
+      <p font-size="58px" bold line-height="1.3">- https://discord.com/invite/7hvTycdNcK</p>
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center slide-in slide-out background="--dark">
+    <div center>
+      <img class="mev" src="/images/MEVAlpha.jpeg" />
+    </div>
+  </slidem-slide>
+
+  <slidem-slide center slide-in slide-out background="--dark">
+    <div center margin-bottom>
+      <p font-size="92px" class="centerCallout dark">
+        Q & A
+      </p>
+    </div>
+    <div center margin-bottom>
+      <p reveal font-size="52px" class="centerCallout dark">
+        We're Hiring!
+      </p>
+    </div>
+  </slidem-slide>
